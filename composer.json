@@ -1,0 +1,26 @@
+{
+    "name": "snesi/mpwarfwk-app",
+    "description": "Example app for David's MPWAR Framework",
+    "authors": [{
+        "name": "David G. Shannon",
+        "email": "gooster.snesi@gmail.com"
+    }],
+    "license": "Apache-2.0",
+    "keywords": [],
+    "homepage": "https://github.com/Snesi/mpwarfwk-standard-edition",
+    "type": "project",
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/Snesi/mpwarfwk-standard-edition.git"
+    }],
+    "require": [{
+        "php": ">=5.3.2",
+        "snesi/mpwarfwk": "dev-devel"
+    }],
+    "minimum-stability": "dev",
+    "autoload": {
+    	"psr-4": {
+    		"": "src/"
+    	}
+    }
+}
