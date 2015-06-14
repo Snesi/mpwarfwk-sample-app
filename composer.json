@@ -11,12 +11,12 @@
     "type": "project",
     "repositories": [{
         "type": "vcs",
-        "url": "https://github.com/Snesi/mpwarfwk-standard-edition.git"
+        "url": "git@github.com:Snesi/mpwarfwk.git"
     }],
-    "require": [{
+    "require": {
         "php": ">=5.3.2",
-        "snesi/mpwarfwk": "dev-devel"
-    }],
+        "snesi/mpwarfwk": "dev-master"
+    },
     "minimum-stability": "dev",
     "autoload": {
     	"psr-4": {

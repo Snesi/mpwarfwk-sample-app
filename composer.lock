@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "9d1531b6d5bbf5de64716f0a5c815ee0",
+    "packages": [
+        {
+            "name": "snesi/mpwarfwk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Snesi/mpwarfwk.git",
+                "reference": "88343eea5dea532857ee91e9971d770343afdfca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/88343eea5dea532857ee91e9971d770343afdfca",
+                "reference": "88343eea5dea532857ee91e9971d770343afdfca",
+                "shasum": ""
+            },
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "": "src/"
+                }
+            },
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "MPWAR Framework",
+            "homepage": "https://github.com/Snesi/mpwarfwk",
+            "support": {
+                "source": "https://github.com/Snesi/mpwarfwk/tree/master",
+                "issues": "https://github.com/Snesi/mpwarfwk/issues"
+            },
+            "time": "2015-06-14 11:13:39"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "snesi/mpwarfwk": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.3.2"
+    },
+    "platform-dev": []
+}
