@@ -1,10 +1,8 @@
 <?php
-$app = require_once __DIR__ . "/../bootstrap.php";
+$app = require_once __DIR__ . "/../src/bootstrap.php";
 
 $request = MPWAR\IOManager::captureHttpRequest();
 
 $response = $app->handle($request);
 
-$response->send();
-
-MPWAR\IOManager::cacheHttpResponse($request, $response);
+MPWAR\IOManager::sendHttpResponse($response);

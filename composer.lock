@@ -12,18 +12,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Snesi/mpwarfwk.git",
-                "reference": "88343eea5dea532857ee91e9971d770343afdfca"
+                "reference": "e13f9fc3f982ca9e45455176635ca53bab0dfaa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/88343eea5dea532857ee91e9971d770343afdfca",
-                "reference": "88343eea5dea532857ee91e9971d770343afdfca",
+                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/e13f9fc3f982ca9e45455176635ca53bab0dfaa5",
+                "reference": "e13f9fc3f982ca9e45455176635ca53bab0dfaa5",
                 "shasum": ""
             },
             "type": "project",
             "autoload": {
                 "psr-4": {
-                    "": "src/"
+                    "MPWAR\\": "src/"
                 }
             },
             "license": [
@@ -35,7 +35,7 @@
                 "source": "https://github.com/Snesi/mpwarfwk/tree/master",
                 "issues": "https://github.com/Snesi/mpwarfwk/issues"
             },
-            "time": "2015-06-14 11:13:39"
+            "time": "2015-06-14 18:03:03"
         }
     ],
     "packages-dev": [],
