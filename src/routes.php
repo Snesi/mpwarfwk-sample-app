@@ -3,17 +3,11 @@
 use MPWAR\Routing\Route;
 
 Route::get("/")
-	->execute("index@HomeController")
+	->execute("index@WelcomeController")
 	->respondWith("html")
 	->expireAfter(5, Route::MINUTES);
 	
-Route::get("/hello")
-	->execute("hello@HomeController")
+Route::get("/hello/{name}")
+	->execute("hello@WelcomeController")
 	->respondWith("html")
 	->expireAfter(5, Route::MINUTES);
-
-Route::get("/user/{id}")
-	->where("id", "\d{36}")
-	->execute("details@UserController")
-	->respondWith("html")
-	->expireAfter(5, Route::SECONDS);
