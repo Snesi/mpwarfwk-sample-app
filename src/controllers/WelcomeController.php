@@ -2,6 +2,7 @@
 namespace Controllers;
 
 use \MPWAR\Controllers\BaseController;
+use \MPWAR\Templating\View;
 
 class WelcomeController extends BaseController
 {
@@ -10,6 +11,6 @@ class WelcomeController extends BaseController
 	}
 
 	public function hello($name) {
-		echo "Hello " . $name;
+		return View::make("hello.html", ["name" => $name]);
 	}
 }
