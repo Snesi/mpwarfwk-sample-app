@@ -4,20 +4,75 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9d1531b6d5bbf5de64716f0a5c815ee0",
+    "hash": "881ecb98397713020b66f97c90565372",
     "packages": [
+        {
+            "name": "smarty/smarty",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-php/smarty.git",
+                "reference": "7e7112153a518011a85d112f64c4f5efe7b8f9b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/7e7112153a518011a85d112f64c4f5efe7b8f9b5",
+                "reference": "7e7112153a518011a85d112f64c4f5efe7b8f9b5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.1.x-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "libs/Smarty.class.php",
+                    "libs/SmartyBC.class.php",
+                    "libs/sysplugins/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Monte Ohrt",
+                    "email": "monte@ohrt.com"
+                },
+                {
+                    "name": "Uwe Tews",
+                    "email": "uwe.tews@googlemail.com"
+                },
+                {
+                    "name": "Rodney Rehm",
+                    "email": "rodney.rehm@medialize.de"
+                }
+            ],
+            "description": "Smarty - the compiling PHP template engine",
+            "homepage": "http://www.smarty.net",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-07-01 11:01:16"
+        },
         {
             "name": "snesi/mpwarfwk",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Snesi/mpwarfwk.git",
-                "reference": "e13f9fc3f982ca9e45455176635ca53bab0dfaa5"
+                "reference": "56519c9fc83023c9554d71687d3e18f63edb1fe6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/e13f9fc3f982ca9e45455176635ca53bab0dfaa5",
-                "reference": "e13f9fc3f982ca9e45455176635ca53bab0dfaa5",
+                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/56519c9fc83023c9554d71687d3e18f63edb1fe6",
+                "reference": "56519c9fc83023c9554d71687d3e18f63edb1fe6",
                 "shasum": ""
             },
             "type": "project",
@@ -35,7 +90,64 @@
                 "source": "https://github.com/Snesi/mpwarfwk/tree/master",
                 "issues": "https://github.com/Snesi/mpwarfwk/issues"
             },
-            "time": "2015-06-14 18:03:03"
+            "time": "2015-07-05 18:48:41"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.18.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/e8e6575abf6102af53ec283f7f14b89e304fa602",
+                "reference": "e8e6575abf6102af53ec283f7f14b89e304fa602",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.18-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-06-06 23:31:24"
         }
     ],
     "packages-dev": [],
