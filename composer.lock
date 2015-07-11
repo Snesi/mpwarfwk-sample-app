@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "881ecb98397713020b66f97c90565372",
+    "hash": "f0b87ded72484e3e5c6142489a167b22",
     "packages": [
         {
             "name": "smarty/smarty",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "7e7112153a518011a85d112f64c4f5efe7b8f9b5"
+                "reference": "b3fd2625416bb3c6e4abb04a279627dc83eff241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/7e7112153a518011a85d112f64c4f5efe7b8f9b5",
-                "reference": "7e7112153a518011a85d112f64c4f5efe7b8f9b5",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/b3fd2625416bb3c6e4abb04a279627dc83eff241",
+                "reference": "b3fd2625416bb3c6e4abb04a279627dc83eff241",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +59,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-07-01 11:01:16"
+            "time": "2015-07-10 03:18:10"
         },
         {
             "name": "snesi/mpwarfwk",
@@ -67,12 +67,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Snesi/mpwarfwk.git",
-                "reference": "56519c9fc83023c9554d71687d3e18f63edb1fe6"
+                "reference": "d2fdadcf657f53c167ff0ce02b65683a5c9af3dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/56519c9fc83023c9554d71687d3e18f63edb1fe6",
-                "reference": "56519c9fc83023c9554d71687d3e18f63edb1fe6",
+                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/d2fdadcf657f53c167ff0ce02b65683a5c9af3dc",
+                "reference": "d2fdadcf657f53c167ff0ce02b65683a5c9af3dc",
                 "shasum": ""
             },
             "type": "project",
@@ -90,7 +90,7 @@
                 "source": "https://github.com/Snesi/mpwarfwk/tree/master",
                 "issues": "https://github.com/Snesi/mpwarfwk/issues"
             },
-            "time": "2015-07-05 18:48:41"
+            "time": "2015-07-11 19:48:05"
         },
         {
             "name": "twig/twig",
