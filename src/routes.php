@@ -3,11 +3,11 @@
 use MPWAR\Routing\Route;
 
 Route::get("/")
-	->execute("index@WelcomeController")
-	->respondWith("html")
-	->expireAfter(5, Route::MINUTES);
-	
+    ->execute("index@WelcomeController")
+    ->respondWith("html")
+    ->expireAfter(5, Route::MINUTES);
+    
 Route::get("/hello/{name}")
-	->execute("hello@WelcomeController")
-	->respondWith("html")
-	->expireAfter(5, Route::MINUTES);
+    ->execute("hello@WelcomeController")
+    ->respondWith("html")
+    ->expireAfter(5, Route::MINUTES);
