@@ -2,3 +2,4 @@ vendor/
 .idea/
 src/views/cache/
 src/views/compiled/
+.env
