@@ -4,9 +4,9 @@
 
 require __DIR__.'/vendor/autoload.php';
 
-use CLI\I18nCommands;
+use CLI\I18nCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application();
-$application->add(new I18nCommands());
+$application->add(new I18nCommand());
 $application->run();
