@@ -4,20 +4,67 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f0b87ded72484e3e5c6142489a167b22",
+    "hash": "ec88566c1f59da2bccd19844c5100788",
     "packages": [
+        {
+            "name": "smarty-gettext/smarty-gettext",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smarty-gettext/smarty-gettext.git",
+                "reference": "bc3978d07165c62cd9f6e1c41e9196e5b90166f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smarty-gettext/smarty-gettext/zipball/bc3978d07165c62cd9f6e1c41e9196e5b90166f2",
+                "reference": "bc3978d07165c62cd9f6e1c41e9196e5b90166f2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gettext": "*",
+                "ext-pcre": "*",
+                "php": ">=5.2.1"
+            },
+            "bin": [
+                "tsmarty2c.php"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "block.t.php",
+                    "function.locale.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "Sagi Bashari",
+                    "email": "sagi@boom.org.il"
+                },
+                {
+                    "name": "Elan Ruusamäe",
+                    "email": "glen@delfi.ee"
+                }
+            ],
+            "description": "Gettext plugin enabling internationalization in Smarty Package files",
+            "homepage": "https://github.com/smarty-gettext/smarty-gettext",
+            "time": "2015-05-11 16:00:56"
+        },
         {
             "name": "smarty/smarty",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/smarty-php/smarty.git",
-                "reference": "b3fd2625416bb3c6e4abb04a279627dc83eff241"
+                "reference": "f61084f70f979489fdc7306b452545511c53a453"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/b3fd2625416bb3c6e4abb04a279627dc83eff241",
-                "reference": "b3fd2625416bb3c6e4abb04a279627dc83eff241",
+                "url": "https://api.github.com/repos/smarty-php/smarty/zipball/f61084f70f979489fdc7306b452545511c53a453",
+                "reference": "f61084f70f979489fdc7306b452545511c53a453",
                 "shasum": ""
             },
             "require": {
@@ -59,7 +106,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2015-07-10 03:18:10"
+            "time": "2015-07-20 02:38:13"
         },
         {
             "name": "snesi/mpwarfwk",
@@ -67,12 +114,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Snesi/mpwarfwk.git",
-                "reference": "d2fdadcf657f53c167ff0ce02b65683a5c9af3dc"
+                "reference": "a3bd17e27e1ea7814f305c332b0b7ce27b883237"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/d2fdadcf657f53c167ff0ce02b65683a5c9af3dc",
-                "reference": "d2fdadcf657f53c167ff0ce02b65683a5c9af3dc",
+                "url": "https://api.github.com/repos/Snesi/mpwarfwk/zipball/a3bd17e27e1ea7814f305c332b0b7ce27b883237",
+                "reference": "a3bd17e27e1ea7814f305c332b0b7ce27b883237",
                 "shasum": ""
             },
             "type": "project",
@@ -90,7 +137,116 @@
                 "source": "https://github.com/Snesi/mpwarfwk/tree/master",
                 "issues": "https://github.com/Snesi/mpwarfwk/issues"
             },
-            "time": "2015-07-11 19:48:05"
+            "time": "2015-07-20 12:47:19"
+        },
+        {
+            "name": "symfony/console",
+            "version": "2.7.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "4b8c7b5c045f1a7bf226e8361d8a6c4ca178f301"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/4b8c7b5c045f1a7bf226e8361d8a6c4ca178f301",
+                "reference": "4b8c7b5c045f1a7bf226e8361d8a6c4ca178f301",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.9"
+            },
+            "require-dev": {
+                "psr/log": "~1.0",
+                "symfony/event-dispatcher": "~2.1",
+                "symfony/phpunit-bridge": "~2.7",
+                "symfony/process": "~2.1"
+            },
+            "suggest": {
+                "psr/log": "For using the console logger",
+                "symfony/event-dispatcher": "",
+                "symfony/process": ""
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Console\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Console Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-07-15 07:34:36"
+        },
+        {
+            "name": "twig/extensions",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig-extensions.git",
+                "reference": "a155ec01555ffa3aab3e7e042d55aab549c83b75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig-extensions/zipball/a155ec01555ffa3aab3e7e042d55aab549c83b75",
+                "reference": "a155ec01555ffa3aab3e7e042d55aab549c83b75",
+                "shasum": ""
+            },
+            "require": {
+                "twig/twig": "~1.12"
+            },
+            "require-dev": {
+                "symfony/translation": "~2.3"
+            },
+            "suggest": {
+                "symfony/translation": "Allow the time_diff output to be translated"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_Extensions_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                }
+            ],
+            "description": "Common additional features for Twig that do not directly belong in core",
+            "homepage": "http://twig.sensiolabs.org/doc/extensions/index.html",
+            "keywords": [
+                "i18n",
+                "text"
+            ],
+            "time": "2015-04-27 12:00:01"
         },
         {
             "name": "twig/twig",
