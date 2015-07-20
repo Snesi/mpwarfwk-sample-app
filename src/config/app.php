@@ -7,4 +7,7 @@ use \MPWAR\AppConfig;
 // You can also chain calls.
 
 AppConfig::debug(true)
-    ->appName("MPWAR-TEST");
+    ->appName("MPWAR-TEST")
+    ->locales(["es", "en"])
+    ->defaultLocale("es")
+    ->localeDir(__DIR__."/../locales");
