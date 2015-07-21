@@ -9,5 +9,4 @@ use \MPWAR\AppConfig;
 AppConfig::debug(true)
     ->appName("MPWAR-TEST")
     ->locales(["es", "en"])
-    ->defaultLocale("es")
-    ->localeDir(__DIR__."/../locales");
+    ->defaultLocale("es");
