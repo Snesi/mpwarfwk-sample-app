@@ -8,6 +8,7 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
 
+
 class I18nCommand extends Command
 {
     protected function configure()
@@ -47,26 +48,26 @@ class I18nCommand extends Command
     {
         $tplDir = __DIR__.'/../src/views';
         $localesDir = __DIR__."/../src/locales";
-        $tmpDir = "$tplDir/cache";
-        $loader = new Twig_Loader_Filesystem($tplDir);
+        $tmpDir = __DIR__."/../src/cache/views";
+        $loader = new \Twig_Loader_Filesystem($tplDir);
 
         // force auto-reload to always have the latest version of the template
-        $twig = new Twig_Environment($loader, array(
+        $twig = new \Twig_Environment($loader, array(
             'cache' => $tmpDir,
             'auto_reload' => true,
         ));
-        $twig->addExtension(new Twig_Extensions_Extension_I18n());
+        $twig->addExtension(new \Twig_Extensions_Extension_I18n());
         // configure Twig the way you want
 
         // iterate over all your templates
-        foreach (new RecursiveIteratorIterator(new RecursiveDirectoryIterator($tplDir), RecursiveIteratorIterator::LEAVES_ONLY) as $file) {
+        foreach (new \RecursiveIteratorIterator(new \RecursiveDirectoryIterator($tplDir), \RecursiveIteratorIterator::LEAVES_ONLY) as $file) {
             // force compilation
             if ($file->isFile()) {
                 $twig->loadTemplate(str_replace($tplDir.'/', '', $file));
             }
         }
 
-        exec("xgettext --default-domain=messages -p $localesDir --from-code=UTF-8 -n --omit-header -L PHP $tmpDir");
+        exec("find $tmpDir -iname '*.php' | xargs xgettext --default-domain=messages -p $localesDir --from-code=UTF-8");
     }
 
     private function loadSmarty()

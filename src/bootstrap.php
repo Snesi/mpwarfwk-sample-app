@@ -17,7 +17,7 @@ function initEnvironment()
 function initTwig() {
     $loader = new Twig_Loader_Filesystem(__DIR__.'/views');
     return new Twig_Environment($loader, array(
-        'cache' => __DIR__.'/views/cache',
+        'cache' => __DIR__.'/cache/views',
     ));
 }
 
@@ -26,7 +26,7 @@ function initSmarty() {
     $smarty->setTemplateDir(__DIR__.'/views');
     $smarty->setCompileDir(__DIR__.'/views/compiled');
     $smarty->setConfigDir(__DIR__.'/config');
-    $smarty->setCacheDir(__DIR__.'/views/cache');
+    $smarty->setCacheDir(__DIR__.'/cache/views');
     //** un-comment the following line to show the debug console
     //$smarty->debugging = true;
     return $smarty;
@@ -49,6 +49,18 @@ $routing = new \MPWAR\Routing\Routing();
 // $templateEngine = new \MPWAR\Templating\SmartyAdapter($smarty);
 
 $twig = initTwig();
+$twig->addExtension(new Twig_Extensions_Extension_I18n());
+
+// Set language to French
+putenv('LC_ALL=es_ES');
+setlocale(LC_ALL, 'es_ES');
+
+// Specify the location of the translation tables
+bindtextdomain('messages', __DIR__.'/locales');
+bind_textdomain_codeset('messages', 'UTF-8');
+
+// Choose domain
+textdomain('myAppPhp');
 
 $templateEngine = new \MPWAR\Templating\TwigAdapter($twig);
 
