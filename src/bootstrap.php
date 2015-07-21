@@ -42,29 +42,32 @@ require_once 'routes.php';
 
 $routing = new \MPWAR\Routing\Routing();
 
+$strings = require_once __DIR__."/locale/strings.php";
+
+//$locale = new \MPWAR\i18n\Locale($strings);
+
 // ------------------------------------------------
 // Uncomment to use Smarty as your templating engine.
 // ------------------------------------------------
 // $smarty = initSmarty();
 // $templateEngine = new \MPWAR\Templating\SmartyAdapter($smarty);
 
+// // Set language to Spanish
+// putenv('LC_ALL=es_ES');
+// setlocale(LC_ALL, 'es_ES');
+//
+// // Specify the location of the translation tables
+// bindtextdomain('messages', __DIR__.'/locale');
+// bind_textdomain_codeset('messages', 'UTF-8');
+//
+// // Choose domain
+// textdomain('messages');
+
 $twig = initTwig();
-$twig->addExtension(new Twig_Extensions_Extension_I18n());
-
-// Set language to French
-putenv('LC_ALL=es_ES');
-setlocale(LC_ALL, 'es_ES');
-
-// Specify the location of the translation tables
-bindtextdomain('messages', __DIR__.'/locales');
-bind_textdomain_codeset('messages', 'UTF-8');
-
-// Choose domain
-textdomain('myAppPhp');
-
+//$twig->addExtension(new Twig_Extensions_Extension_I18n());
 $templateEngine = new \MPWAR\Templating\TwigAdapter($twig);
 
-$app = new \MPWAR\AppKernel($routing, $templateEngine);
+$app = new \MPWAR\AppKernel($routing, $templateEngine, $strings);
 
 if(\MPWAR\AppConfig::debug()) {
     return new \MPWAR\Debugger($app);

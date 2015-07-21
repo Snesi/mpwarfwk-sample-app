@@ -18,7 +18,11 @@ class WelcomeController extends BaseController
         if($this->request->isJson()) {
             return Json::make(["greeting" => "hello", "receiver" => $name]);
         } else {
-            return View::make("hello.html", ["name" => $name]);
+            return View::make("hello.twig", [
+                "name" => $name,
+                "strings" => $this->strings,
+                "locale" => $this->request->locale
+            ]);
         }
     }
 
