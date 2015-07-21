@@ -131,6 +131,8 @@ class WelcomeController extends BaseController
 Views should all go in the views folder. There are some error templates included, but
 they should be modified.
 
+Only two template engines are supported, Twig and Smarty.
+
 ## Environment configuration
 
 All environment configuration in development and in production should go in the .env file.
