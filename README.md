@@ -3,7 +3,7 @@ Sample app for my MPWAR's Framework
 
 ## Installation
 
-To begin a project with snesi's mpwarfwk, all you need to do is fork the sample app.
+To begin a project with snesi's mpwarfwk, all you need to do is clone the sample app.
 
 Everything you need to interact with the framework's API is in the sample.
 
